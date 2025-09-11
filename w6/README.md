@@ -20,10 +20,6 @@ This app is specifically tailored to help me decide **what kind of workout to do
 2.  **The day of the week**: To align with a structured weekly fitness plan (e.g., HIIT on some days, active recovery on others).
 3.  **The weather**: To decide whether an indoor or outdoor activity is more appropriate.
 
-## My Decision Focus
-
-This application is specifically tailored to help me decide on my daily workout type. Based on my sleep quality (sleep score), recovery status (HRV), and how I feel, the app suggests a workout. For example, if my sleep score and HRV are high, it might suggest intense training, while low scores could lead to a recommendation for recovery. This helps me optimize my training and prevent overtraining or injury.
-
 
 ### My Decision Logic
 
