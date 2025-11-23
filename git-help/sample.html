@@ -1,0 +1,244 @@
+<div id="canvas-assignment-instructions">   
+<p style="text-align: center;"><a class="inline_disabled" title="Link" href="[Your_Link_Here]" target="_blank" rel="noopener">Click here to start</a></p>
+</div>
+<table id="steps" style="border-collapse: collapse; display: none; width: 97.9516%; height: 129px;" border="2">
+<tbody>
+<tr>
+<th>Steps</th>
+<th>Chat Bubbles</th>
+</tr>
+<tr>
+<td>Start</td>
+<td>       
+<h3>Welcome to Checkpoint 2.2!</h3>
+       
+<p>This is a quick check to help you review the concepts from this week's assignment. Your goal is to answer 5 concept questions and 5 coding challenges.</p>
+       
+<p><strong>When you are ready, please click on 'Q1' to begin.</strong></p>
+       <hr />       
+<h4>System Prompt (Tutor Rules)</h4>
+       
+<p>You are an interactive tutor. Your job is to guide a student one step at a time using the HTML content I provide for each step. From the HTML, you will:</p>
+       
+<ol>         
+<li>Find the text inside the question's <code>&lt;h3&gt;</code> and <code>&lt;p&gt;</code> tags and ask me <strong>only that question</strong>.</li>
+         
+<li><strong>Wait</strong> for my response.</li>
+         
+<li>Analyze my response. If it aligns with the concept in the <code>&lt;strong&gt;[On Correct ✅ Answer]:&lt;/strong&gt;</code> text, then give me that feedback.</li>
+         
+<li>If my response is incorrect, give me the feedback from the <code>&lt;strong&gt;[On Incorrect ❌ Answer]:&lt;/strong&gt;</code> text and let me try again.</li>
+       </ol>
+       
+<p>Do not provide the answer unless I have first attempted the question. Do not mention the HTML structure in your responses.</p>
+     </td>
+</tr>
+<tr>
+<td>Q1</td>
+<td>       
+<h3>Conceptual Question 1/5</h3>
+       
+<p>What is the purpose of `document.getElementById("some-id")` and why do we often store its result in a `const` variable?</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "Exactly! It grabs a specific HTML element so we can work with it in JavaScript, and we use `const` because the element reference itself doesn't change."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Almost. It's used to *select* an existing element from the HTML page. Think about why the reference to that element is considered a constant value. Please try again."</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>       
+<h3>Conceptual Question 2/5</h3>
+       
+<p>Explain the role of an event listener, like the one used on the `updateButton`. What are the two main arguments `addEventListener` needs?</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "Perfect! An event listener waits for a user action. It needs the event type (like 'click') and the function to run (the handler) when that event happens. You nailed it."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "You're on the right track! It does make the button work. But what is it *listening* for? It needs to know the type of event (like 'click') and what code to run when that happens. Please try again."</p>
+  _      </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>       
+<h3>Conceptual Question 3/5</h3>
+       
+<p>In the `handleButtonClick` function, what is the purpose of the `if/else` statement?</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "That's the key! It's for making decisions. It checks a condition (`clickCount &gt;= 5`) and runs different code blocks based on whether that condition is true or false."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Good try. Think about how the message and color change only *after* a certain number of clicks. What kind of code structure lets us check a condition and do different things?"</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>Q4</td>
+<td>       
+<h3>Conceptual Question 4/5</h3>
+       
+<p>What is the difference between `element.textContent` and `element.style.color`?</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "You got it! `textContent` changes the actual text inside the element, while `style.color` changes its CSS styling, specifically the text color. Great distinction!"</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Not quite. They both change the element, but in different ways. One affects the *content* (the words you see), and the other affects the *appearance* (like its color)."</p>
+         </li>
+       _</ul>
+     </td>
+</tr>
+<tr>
+<td>Q5</td>
+<td>       
+<h3>Conceptual Question 5/5</h3>
+       
+<p>Why is the `DOMContentLoaded` event listener used in this script? What problem does it prevent?</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "Yes, that's it! It makes sure the JavaScript doesn't run until the HTML page is fully loaded, preventing errors from trying to find elements that don't exist yet."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "You're on the right track. It has to do with timing. What would happen if the JavaScript tried to find `update-button` before the HTML for that button was even loaded by the browser?"</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>C1</td>
+<td>       
+<h3>Coding Challenge 1/5</h3>
+       
+<p>Declare a constant variable named `titleElement` and assign it the HTML element with the ID `page-title`.</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "Perfect! `const titleElement = document.getElementById('page-title');` is exactly how you select an element and store it."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Close! Remember the method for grabbing an element by its unique HTML ID. It starts with `document.get...` and you need to pass the ID as a string."</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>C2</td>
+<td>       
+<h3>Coding Challenge 2/5</h3>
+       
+<p>Imagine you have a variable `let score = 100;`. Write the code to update the `textContent` of an element called `scoreDisplayElement` to show "Score: 100".</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "Exactly! `scoreDisplayElement.textContent = `Score: ${score}`;` correctly uses a template string to update the display."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Almost there. Which property of an element do you set to change the text inside of it? And try to use a template literal (```) to combine the string and the variable."</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>C3</td>
+<td>       
+<h3>Coding Challenge 3/5</h3>
+       
+<p>Write an `if` statement that checks if a variable `playerLives` is equal to `0`. If it is, change the `style.color` of an element named `livesDisplayElement` to `red`.</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "Nailed it! `if (playerLives === 0) { livesDisplayElement.style.color = 'red'; }` is perfect for checking the condition and changing the style."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Good start! Make sure your condition is inside parentheses `()` and the code to run is inside curly braces `{}`. Also, use the strict equality `===` operator for the check."</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>C4</td>
+<td>       
+<h3>Coding Challenge 4/5</h3>
+       
+<p>Define a simple function named `showWelcomeMessage` that, when called, logs the message "Welcome to the game!" to the console.</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "Yes! `const showWelcomeMessage = function() { console.log('Welcome to the game!'); };` is a great way to define a function. Well done."</p>
+         </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Good attempt! The syntax for a function expression is: `const functionName = function() { ... your code here ... };`. Give it another shot!"</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>C5</td>
+<td>       
+<h3>Coding Challenge 5/5</h3>
+       
+<p>You have a button stored in a variable `resetButton` and a function named `handleReset`. Write the code to attach an event listener that calls `handleReset` when the `resetButton` is clicked.</p>
+       
+<ul>         
+<li>           
+<p><strong>[On Correct ✅ Answer]:</strong> "That's it! `resetButton.addEventListener('click', handleReset);` is the perfect line of code for this. You have now completed all the questions! You may now select the 'Report Card' button."</p>
+    _     </li>
+         
+<li>           
+<p><strong>[On Incorrect ❌ Answer]:</strong> "Careful! Remember the two arguments for `addEventListener`: the name of the event as a string (e.g., 'click') and the name of the function to call (without parentheses)."</p>
+         </li>
+       </ul>
+     </td>
+</tr>
+<tr>
+<td>Report Card</td>
+<td>       
+<h3>Your Checkpoint 2.2 Report Card</h3>
+       
+<p>Great job completing the checkpoint! Here's a summary of your results:</p>
+       <hr />       
+<h4><strong>Final Score: [Your Score] / 100 Points</strong></h4>
+       
+<p>Below is a detailed review of the questions. Use this as a study guide to reinforce the concepts!</p>
+       
+<h3>Conceptual Questions Review</h3>
+       
+<h3>Coding Challenges Review</h3>
+       <hr />       
+<h3>Key Takeaways for this Session</h3>
+       
+<ul>         
+<li><strong>Connecting JS to HTML:</strong> Use `document.getElementById()` to select elements and `const` to store them.</li>
+         
+<li><strong>Making Pages Interactive:</strong> `element.addEventListener('click', functionName)` is how you make things happen when a user clicks.</li>
+         
+<li><strong>DOM is Ready:</strong> Always wrap your code in a `DOMContentLoaded` listener to ensure your HTML elements exist before your script tries to access them.</li>
+<li><strong>Dynamic Updates:</strong> You can change what the user sees by setting properties like `element.textContent` (for text) and `element.style` (for CSS).</li>
+       </ul>
+     </td>
+</tr>
+</tbody>
+</table>
